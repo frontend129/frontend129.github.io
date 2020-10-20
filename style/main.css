@@ -1,0 +1,49 @@
+@import 'fonts.css';
+
+.top-panel {
+    background-color: #252525;
+    height: 54px;    
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts {
+    color: white;
+    font-family: 'Geometria';
+    font-size: 12px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+.contacts ul li:first-child {
+    list-style-image: url(/SVG/phone.svg);  
+    float: left;  
+    padding-right: 53px;
+}
+
+.contacts ul li:last-child {
+    list-style-image: url(/SVG/mail.svg);
+    float: left;
+}
+
+#top-button {
+    background: linear-gradient(42deg, rgba(129,47,231,1) 0%, rgba(191,61,216,1) 100%);
+
+}
+
+.humburger {
+    display: inline;
+}
