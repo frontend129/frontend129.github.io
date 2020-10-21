@@ -1,12 +1,18 @@
 @import 'fonts.css';
 
+hr {
+    margin: 0;
+}
+
 .top-panel {
+    width: 100%;
     background-color: #252525;
     height: 54px;    
 }
 
 .container {
-    width: 1400px;
+    background-color: #252525;
+    max-width: 1400px;
     margin: auto;
     height: 100%;
     display: flex;
@@ -14,20 +20,44 @@
     justify-content: space-between;
 }
 
+.container_nav-menu {
+    max-width: 1400px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 1400px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+#top_logo {
+    margin-left: 3%;
+}
+
 .contacts {
     color: white;
     font-family: 'Geometria';
-    font-size: 12px;
     width: 30%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-right: 3%; 
+    height: 100%;
 }
 
 .contacts ul {
     display: inline;
     padding: 0;
     margin: 0;
+    font-size: 0.85em;
 }
+
 .contacts ul li:first-child {
     list-style-image: url(/SVG/phone.svg);  
     float: left;  
@@ -40,10 +70,98 @@
 }
 
 #top-button {
-    background: linear-gradient(42deg, rgba(129,47,231,1) 0%, rgba(191,61,216,1) 100%);
-
+    background: linear-gradient(0deg, rgba(129,47,231,1) 0%, rgba(191,61,216,1) 100%);
+    border: none;
+    font-family: 'Geometria';
+    font-size: 0.85em;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
 }
 
 .humburger {
     display: inline;
+}
+.top-nav-menu {
+    display: flex;
+    height: 64px;
+}
+
+.top-nav-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 0.85em;
+}
+
+.top-nav-lang-box {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.local-selector {
+    border: 1px solid #EBEBEB;
+    padding: 13px 13px;
+    border-radius: 20px;
+    width: 56px;
+    display: flex;
+    justify-content: space-between;
+    float: left;
+}
+
+.local-selector img {
+    float: left;
+}
+
+.country-selector {
+    float: left;
+}
+
+.country-selector::after {
+    content: url(../SVG/arrow_dropdown.svg);
+    margin-left: 5px;
+}
+
+.selectable a::after {
+    content: url(../SVG/arrow_dropdown.svg);
+    margin-left: 5px;
+}
+
+.flag_style img {
+    border-radius: 5px;
+}
+
+.lang-viewe {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title h1 {
+    font-family: 'Geometria';
+    font-size: 2em;
+}
+
+.left-sidebar {
+    position: fixed;
+    width: 30%;
+}
+
+.page-content {
+    position: relative;
+    width: 70%;
+    float: right;
+}
+
+footer {
+    clear: both;
 }
